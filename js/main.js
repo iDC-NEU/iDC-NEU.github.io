@@ -1,191 +1,70 @@
- AOS.init({
- 	duration: 800,
- 	easing: 'slide'
- });
-
-(function($) {
-
-	"use strict";
-
-	$(window).stellar({
-    responsive: true,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: false,
-    hideDistantElements: false,
-    scrollProperty: 'scroll'
-  });
-
-
-	var fullHeight = function() {
-
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
+$(document).ready(function() {
+	$(".item-list li").mouseenter(function(){  
+        $(this).find($('.item-list .hover')).stop(true, true).fadeIn(600);
+        return false;
+     });
+      $('.item-list li').mouseleave(function(){  
+        $(this).find($('.item-list .hover')).stop(true, true).fadeOut(400);
+        return false;
+     });
+      jQuery(document).on('click', ".menu_trigger", function (e) {
+        e.preventDefault()
+        window.setTimeout(function() {
+            if(jQuery('#nav').hasClass('clicked')){
+                jQuery('#nav').stop(true,true).animate({height:'hide'},100);
+                jQuery('#nav').removeClass('clicked');
+            }else{
+                jQuery('#nav').stop(true,true).animate({height:'show'},400);
+                jQuery('#nav').addClass('clicked');
+            }
+        }, 400);
+        return false;
+    });
+    jQuery("#nav").on('click', '.drops', function () {
+        if (jQuery(this).hasClass("active")) {
+            jQuery(this).removeClass("active").parent().next().slideUp();
+        } else {
+            jQuery(this).addClass("active").parent().next().slideDown();
+        }
+        return false;
+    });
+// begin add	
+	var $container = $('#container');
+	// init
+	$container.isotope({
+		// options
+		itemSelector: '.item',
+		layoutMode: 'cellsByRow',
+		cellsByRow: {
+			columnWidth: 295,
+			rowHeight: 295
+		}
 		});
-
-	};
-	fullHeight();
-
-	// loader
-	var loader = function() {
-		setTimeout(function() { 
-			if($('#ftco-loader').length > 0) {
-				$('#ftco-loader').removeClass('show');
-			}
-		}, 1);
-	};
-	loader();
-
-	// Scrollax
-   $.Scrollax();
-
-
-   var burgerMenu = function() {
-
-		$('.js-colorlib-nav-toggle').on('click', function(event){
-			event.preventDefault();
-			var $this = $(this);
-
-			if ($('body').hasClass('offcanvas')) {
-				$this.removeClass('active');
-				$('body').removeClass('offcanvas');	
-			} else {
-				$this.addClass('active');
-				$('body').addClass('offcanvas');	
-			}
-		});
-	};
-	burgerMenu();
-
-	// Click outside of offcanvass
-	var mobileMenuOutsideClick = function() {
-
-		$(document).click(function (e) {
-	    var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-
-	    	if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('.js-colorlib-nav-toggle').removeClass('active');
-			
-	    	}
-	    	
+		
+	$('#filters').on( 'click', 'li', function() {
+		var filterValue = $(this).attr('data-filter');
+		$container.isotope({ filter: filterValue });
+		$( "#filters li" ).removeClass("active");
+		$(this).addClass("active");
+	});
+	$('.fancybox').fancybox({
+	  helpers: {
+	    overlay: {
+	      locked: false
 	    }
-		});
-
-		$(window).scroll(function(){
-			if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('.js-colorlib-nav-toggle').removeClass('active');
-			
-	    	}
-		});
-
-	};
-	mobileMenuOutsideClick();
-
-	var carousel = function() {
-		$('.home-slider').owlCarousel({
-	    loop:true,
-	    autoplay: true,
-	    margin:0,
-	    animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-	    nav:false,
-	    autoplayHoverPause: false,
-	    items: 1,
-	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
-	    responsive:{
-	      0:{
-	        items:1
-	      },
-	      600:{
-	        items:1
-	      },
-	      1000:{
-	        items:1
-	      }
-	    }
-		});
-
-	};
-	carousel();
-
-	
-
-	var contentWayPoint = function() {
-		var i = 0;
-		$('.ftco-animate').waypoint( function( direction ) {
-
-			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-				
-				i++;
-
-				$(this.element).addClass('item-animate');
-				setTimeout(function(){
-
-					$('body .ftco-animate.item-animate').each(function(k){
-						var el = $(this);
-						setTimeout( function () {
-							var effect = el.data('animate-effect');
-							if ( effect === 'fadeIn') {
-								el.addClass('fadeIn ftco-animated');
-							} else if ( effect === 'fadeInLeft') {
-								el.addClass('fadeInLeft ftco-animated');
-							} else if ( effect === 'fadeInRight') {
-								el.addClass('fadeInRight ftco-animated');
-							} else {
-								el.addClass('fadeInUp ftco-animated');
-							}
-							el.removeClass('item-animate');
-						},  k * 50, 'easeInOutExpo' );
-					});
-					
-				}, 100);
-				
-			}
-
-		} , { offset: '95%' } );
-	};
-	contentWayPoint();
-
-
-	// magnific popup
-	$('.image-popup').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    closeBtnInside: false,
-    fixedContentPos: true,
-    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-     gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-    },
-    image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300 // don't foget to change the duration also in CSS
+	  }
+	});
+// end add	
+}); 
+$(window).resize(function() {
+    if($(document).width() > 768){
+      $( "#nav" ).addClass("active");
+      $( "#nav ul" ).attr('style','');
+      $( "#nav" ).attr('style','');
+      $( "#nav" ).removeClass("clicked");
+      $( "#nav .active" ).removeClass('active');
     }
-  });
-
-  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
-
-    fixedContentPos: false
-  });
-
-
-
-
-})(jQuery);
-
+    else {
+        $( "#nav" ).removeClass("active");
+    }
+});
