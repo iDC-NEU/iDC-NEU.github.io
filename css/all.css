@@ -196,7 +196,7 @@ a:hover{text-decoration:underline;}
 	width: 31px;
 	height: 31px;
 	right:0;
-	background: url(../images/btn_mobile_menu.png) no-repeat;
+	background: url(../images/mobile_menu.png) no-repeat;
 	text-indent: -9999em;
 	display: none;
 	top: 5px;
@@ -672,96 +672,72 @@ transition: all 0.5s ease-in-out;
 
 @media (-webkit-min-device-pixel-ratio:2) ,(min--moz-device-pixel-ratio:2),(-o-min-device-pixel-ratio:2/1),(min-device-pixel-ratio:2),(min-resolution:192dpi),(min-resolution:2dppx){
 	#main {
-		background-image: url(../images/icon_header@x2.png);
 		background-size:114px 46px;
 	}
 	.menu_trigger{
-		background-image: url(../images/btn_mobile_menu@x2.png);
+		background-image: url(../images/mobile_menu.png);
 		background-size:31px 30px;
 	}
-	.slogan{
-		background-image: url(../images/slogan_bg@x2.gif);
-		background-size:80px 4px;
-	}
+	
 	.box_timeline_holder{
-		background-image: url(../images/bg_timeline_l@x2.png);
 		background-size:100px 16px;
 	}
 	.box_timeline{
-		background-image: url(../images/bg_timeline_r@x2.png);
 		background-size:100px 16px;
 	}
 	.box_timeline ul li .date{
-		background-image: url(../images/bg_timeline_c@x2.png);
 		background-size:50px 86px;
 	}
 	.footer-content .social li.email a{
-		background-image: url(../images/icon_email@x2.png);
 		background-size:51px 38px;
 	}
 	.footer-content .social li.facebook a{
-		background-image: url(../images/icon_fb@x2.png);
 		background-size:20px 38px;
 	}
 	.footer-content .social li.google a{
-		background-image: url(../images/icon_gl@x2.png);
 		background-size:42px 38px;
 	}
 	.footer-content .social li.twitter a{
-		background-image: url(../images/icon_tw@x2.png);
 		background-size:44px 34px;
 	}
 	.footer-content .social li.pinterest a{
-		background-image: url(../images/icon_pn@x2.png);
 		background-size:38px 38px;
 	}
 	.plagin_list li.li_1 a{
-		background-image: url(../images/icon_ps@x2.png);
 		background-size:49px 42px;
 	}
 	.plagin_list li.li_2 a{
-		background-image: url(../images/icon_ai@x2.png);
 		background-size:45px 42px;
 	}
 	.plagin_list li.li_3 a{
-		background-image: url(../images/icon_ld@x2.png);
 		background-size:40px 43px;
 	}
 	.plagin_list li.li_4 a{
-		background-image: url(../images/icon_fl@x2.png);
 		background-size:34px 42px;
 	}
 	.plagin_list li.li_5 a{
-		background-image: url(../images/icon_html@x2.png);
 		background-size:39px 55px;
 	}
 	.plagin_list li.li_6 a{
-		background-image: url(../images/icon_wp@x2.png);
 		background-size:55px 55px;
 	}
 	.plagin_list li.li_7 a{
-		background-image: url(../images/icon_jq@x2.png);
 		background-size:87px 20px;
 	}
 	.plagin_list li.li_8 a{
-		background-image: url(../images/icon_seo@x2.png);
 		background-size:60px 24px;
 	}
 	.box_contact span.email{
-		background-image: url(../images/icon_email2@x2.png);
 		background-size:54px 41px;
 	}
 	.box_contact span.phone{
-		background-image: url(../images/icon_phone@x2.png);
 		background-size:54px 54px;
 	}
 	.box_contact span.skype{
-		background-image: url(../images/icon_skype@x2.png);
 		background-size:54px 51px;
 	}
 /* begin add	 */
 	.fancybox-close {
-		background-image: url(../images/ico_btn-close@x2.png);
 		background-size:46px 46px;
 	}
 /* end add	 */
