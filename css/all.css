@@ -203,7 +203,17 @@ transition: all 0.5s ease-in-out;
 	padding: 0px auto;
 	display:table;
 }
-
+h2.slogan{
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'novecento_sans_widebook';
+	font-size: 30px;
+	line-height: 32px;
+	color: #aeecc2;
+	padding: 34px 0 50px 0;
+	background: url(../images/slogan_bg.gif) no-repeat 50% 0;
+}
 .member-body{
 	width:50%;
 	margin:10px auto;
