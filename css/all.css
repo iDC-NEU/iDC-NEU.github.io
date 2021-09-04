@@ -157,8 +157,8 @@ a:hover{text-decoration:underline;}
 	font-family: 'novecentosanswide';
 	font-weight:bold;
 	color: #fff;
-	font-size: 35px;
-	line-height: 38px;
+	font-size: 30px;
+	line-height: 32px;
 	display: block;
 	text-transform: uppercase;
 	padding: 0px 20px ;
@@ -197,11 +197,12 @@ a:hover{text-decoration:underline;}
 transition: all 0.5s ease-in-out;
 }
 .index-body{
-	max-width:1000px;
+	max-width:950px;
 	width:100%;
 	margin:0px auto;
 	padding: 0px auto;
 	display:table;
+	color:Gray;
 }
 h2.slogan{
 	display: block;
@@ -212,6 +213,11 @@ h2.slogan{
 	line-height: 32px;
 	color: #aeecc2;
 	padding: 34px 0 50px 0;
+	color:orange;
+}
+.index-body p{
+	line-height:180%;
+	padding:10px 0;
 }
 .member-body{
 	max-width:1000px;
