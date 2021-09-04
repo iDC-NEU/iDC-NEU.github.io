@@ -1,43 +1,4 @@
-@font-face {
-    font-family: 'novecentosanswide';
-    src: url('../fonts/novecentosanswide-normal-webfont.eot');
-    src: url('../fonts/novecentosanswide-normal-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/novecentosanswide-normal-webfont.woff') format('woff'),
-         url('../fonts/novecentosanswide-normal-webfont.ttf') format('truetype'),
-         url('../fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'novecentosanswide';
-    src: url('../fonts/novecentosanswide-bold-webfont.eot');
-    src: url('../fonts/novecentosanswide-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/novecentosanswide-bold-webfont.woff') format('woff'),
-         url('../fonts/novecentosanswide-bold-webfont.ttf') format('truetype'),
-         url('../fonts/novecentosanswide-bold-webfont.svg#novecentosanswidebold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'novecento_sans_widebook';
-    src: url('../fonts/novecentosanswide-book-webfont.eot');
-    src: url('../fonts/novecentosanswide-book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/novecentosanswide-book-webfont.woff') format('woff'),
-         url('../fonts/novecentosanswide-book-webfont.ttf') format('truetype'),
-         url('../fonts/novecentosanswide-book-webfont.svg#novecento_sans_widebook') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'novecento_sans_widemedium';
-    src: url('../fonts/novecentosanswide-medium-webfont.eot');
-    src: url('../fonts/novecentosanswide-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/novecentosanswide-medium-webfont.woff') format('woff'),
-         url('../fonts/novecentosanswide-medium-webfont.ttf') format('truetype'),
-         url('../fonts/novecentosanswide-medium-webfont.svg#novecento_sans_widemedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,8 +15,12 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	
 	vertical-align: baseline;
+}
+
+html{
+	overflow-y: scroll;
 }
 
 article, aside, details, figcaption, figure, 
@@ -125,21 +90,21 @@ body{
 	-webkit-text-size-adjust: none; 
 }
 img{border-style:none; vertical-align: top;}
-a{text-decoration:none; color:#6e6e6e;}
-a:hover{text-decoration:underline;}
+
 #wrapper{
 	width:100%;
 	height: 100%;
+	display:table;
 }
 .wrapper-header {
 	width:100%;
 	height: 10%;
     display:table;
-    background: #0000FF;
+    background: #5555FF;
 }
 .index-wrapper{
 	width:100%;
-	height:90%;
+	
 	margin:0px auto;
 	padding: 0px auto;
 	display:table;
@@ -184,8 +149,8 @@ a:hover{text-decoration:underline;}
 	text-transform: uppercase;
 	padding: 0 0 10px;
 	border-bottom: 4px solid #62bb7f;
-	font-family: 'novecentosanswide';
 	font-weight: normal;
+	text-decoration:none;
 }
 #nav ul a:hover,#nav ul a.active{
 	color: #fff;
@@ -209,10 +174,9 @@ h2.slogan{
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'novecento_sans_widebook';
-	font-size: 30px;
-	line-height: 32px;
+	font-size: 25px;
 	color: #aeecc2;
-	padding: 34px 0 50px 0;
+	padding: 20px 0 0px 0;
 	color:orange;
 }
 .index-body p{
@@ -220,30 +184,46 @@ h2.slogan{
 	padding:10px 0;
 }
 .member-body{
-	max-width:1000px;
-	width:100%;
-	margin:10px auto;
-	padding: 10px auto;
+	max-width:760px;
+	width:95%;
+	margin:0px auto;
+	padding: 10px auto 0  auto;
 	display:table;
 	text-align:center;
 }
+.member-item-center p{
+	padding:7px 0;
+	line-height:150%;
+}
 .member-item-center{
 	width:150px;
-	height:150px;
-	background:#0F00FF; 
+	font-size:16px;
 	display:inline-block;
-	margin:30px 30px;
+	margin:20px 30px 0px 30px;
 	vertical-align:top;
 }
 
 .member-item-left{
 	width:150px;
-	height:150px;
-	background:#0F00FF;
+	font-size:16px;
 	float:left;
 	display:inline-block;
-	margin:30px 30px;
+	margin:30px 20px 0 20px;
 	vertical-align:top;
+}
+.member-item-left p{
+	padding:7px 0;
+	line-height:150%;
+}
+
+.member-list{
+	max-width:760px;
+	width:95%;
+	margin:10px auto;
+	padding: 10px auto;
+	display:table;
+	font-size:16px;
+	color:black;
 }
 
 .publication-body{
@@ -286,3 +266,37 @@ h2.slogan{
 .publication-body em{
 	font-style:italic;
 }
+
+#footer {
+    width:100%;
+    display:table-footer-group;
+    background:#000fff;
+	text-align: center;
+}
+.footer-content {
+	text-align: left;
+	max-width: 300px;
+	margin: 0 150px;
+	padding: 20px 0;
+	color: #a5a5a5;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.footer-content p{
+	font: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	display: block;
+	text-align: left;
+	color: #929c95;
+}
+
+.footer-content a{
+	font: Arial, Helvetica, sans-serif;
+	display: block;
+	text-align: left;
+	color: #929c95;
+	text-decoration:none;
+}
+
+
