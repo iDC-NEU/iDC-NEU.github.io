@@ -144,6 +144,58 @@ a:hover{text-decoration:underline;}
 	padding: 0px auto;
 	display:table;
 }
+.menu_trigger{
+	width: 31px;
+	height: 31px;
+	right:0;
+	background: url(../images/mobile_menu.png) no-repeat;
+	display: none;
+	position: absolute;
+}
+.logo {
+	text-align:center;
+	font-family: 'novecentosanswide';
+	font-weight:bold;
+	color: #fff;
+	font-size: 35px;
+	line-height: 38px;
+	display: block;
+	text-transform: uppercase;
+	padding: 0px 20px ;
+}
+#nav {
+	position: relative;
+	display: table;
+	margin: 0 auto 10px;
+	padding: 15px 0 0 10px;
+}
+#nav ul {
+	text-align: center;
+}
+#nav ul li {
+	float: left;
+	padding: 0 0 0 60px;
+}
+#nav ul li:first-child{padding: 0;}
+#nav ul a {
+	color: #aeecc2;
+	font-size: 18px;
+	line-height: 20px;
+	text-transform: uppercase;
+	padding: 0 0 10px;
+	border-bottom: 4px solid #62bb7f;
+	font-family: 'novecentosanswide';
+	font-weight: normal;
+}
+#nav ul a:hover,#nav ul a.active{
+	color: #fff;
+	border-bottom: 4px solid #fff;
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
 .index-body{
 	max-width:70%;
 	min-width:50%;
@@ -192,60 +244,7 @@ a:hover{text-decoration:underline;}
 	padding: 20px 0 20px;
 	position:relative;
 }
-.menu_trigger{
-	width: 31px;
-	height: 31px;
-	right:0;
-	background: url(../images/mobile_menu.png) no-repeat;
-	text-indent: -9999em;
-	display: none;
-	top: 5px;
-	position: absolute;
-}
-.logo {
-	text-align:center;
-	font-family: 'novecentosanswide';
-	font-weight:bold;
-	color: #fff;
-	font-size: 35px;
-	line-height: 38px;
-	display: block;
-	text-transform: uppercase;
-	margin: 15px 0 15px;
-}
-#nav {
-	position: relative;
-	display: table;
-	margin: 0 auto 10px;
-	padding: 0 0 0 10px;
-}
-#nav ul {
-	text-align: center;
-}
-#nav ul li {
-	float: left;
-	padding: 0 0 0 60px;
-}
-#nav ul li:first-child{padding: 0;}
-#nav ul a {
-	color: #aeecc2;
-	font-size: 18px;
-	line-height: 20px;
-	text-transform: uppercase;
-	padding: 0 0 10px;
-	border-bottom: 4px solid #62bb7f;
-	font-family: 'novecentosanswide';
-	font-weight: normal;
-}
-#nav ul a:hover,#nav ul a.active{
-	color: #fff;
-	border-bottom: 4px solid #fff;
-	text-decoration: none;
-	-webkit-transition: all 0.5s ease-in-out;
--moz-transition: all 0.5s ease-in-out;
--o-transition: all 0.5s ease-in-out;
-transition: all 0.5s ease-in-out;
-}
+
 h2.slogan{
 	display: block;
 	text-align: center;
