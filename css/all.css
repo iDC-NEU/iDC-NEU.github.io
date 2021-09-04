@@ -241,11 +241,11 @@ h2.slogan{
 }
 
 .publication-body{
-	width:50%;
+	max-width:1000px;
+	width:100%;
 	margin:10px auto;
 	padding: 10px auto;
 	display:table;
-	
 }
 
 #header {
