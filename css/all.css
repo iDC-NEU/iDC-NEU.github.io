@@ -198,7 +198,7 @@ transition: all 0.5s ease-in-out;
 }
 .index-body{
 	max-width:950px;
-	width:100%;
+	width:90%;
 	margin:0px auto;
 	padding: 0px auto;
 	display:table;
