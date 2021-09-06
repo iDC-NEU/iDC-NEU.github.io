@@ -1,4 +1,4 @@
-document.writeln("    <div class=\"logo\"><h1>欢迎访问大数据课题组</h1></div>")
+document.writeln("    <div class=\"logo\"><h1>智能计算系统课题组</h1></div>")
 document.writeln("    		<a class=\"menu_trigger\" href=\"#\"></a>")
 document.writeln("    		<nav id=\"nav\">")
 document.writeln("    			<ul>")
