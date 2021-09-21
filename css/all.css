@@ -272,6 +272,28 @@ h2.slogan{
 	font-style:italic;
 }
 
+.research-body{
+	max-width:1000px;
+	width:100%;
+	margin: 10px auto;
+	padding: 10px auto;
+	display:table;
+	text-align:center;
+}
+
+h2.research{
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'novecento_sans_widebook';
+	font-size: 50px;
+	color: #aeecc2;
+	padding: 20px 0 0px 0;
+	color:orange;
+}
+
+
+
 #footer {
     width:100%;
     display:table-footer-group;
