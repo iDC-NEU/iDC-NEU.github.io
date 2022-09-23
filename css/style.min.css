@@ -1,0 +1,241 @@
+/************* 全局 begin *************/
+*{margin:0;padding:0;border:0;outline:0;font-family:Arial,"Microsoft Sans Serif","Lucida Sans Unicode";font-size:10pt;line-height:normal;color:#fff}.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.clearfix{display:inline-block}html[xmlns] .clearfix{display:block}* html .clearfix{height:1%}
+/************* 全局 end *************/
+/************* nivo-slider-general begin *************/
+.nivoSlider{position:relative}.nivoSlider img{position:absolute;top:0;left:0}.nivoSlider a.nivo-imageLink{position:absolute;top:0;left:0;width:100%;height:100%;border:0;padding:0;margin:0;z-index:6;display:none}.nivo-slice{display:block;position:absolute;z-index:5;height:100%}.nivo-box{display:block;position:absolute;z-index:5}.nivo-caption{position:absolute;left:0;bottom:0;background:#000;color:#fff;opacity:.8;width:100%;z-index:8}.nivo-caption p{padding:5px;margin:0}.nivo-caption a{display:inline!important}.nivo-html-caption{display:none}.nivo-directionNav a{position:absolute;top:45%;z-index:9;cursor:pointer}.nivo-prevNav{left:0}.nivo-nextNav{right:0}.nivo-controlNav a{position:relative;z-index:9;cursor:pointer}.nivo-controlNav a.active{font-weight:bold}
+/************* nivo-slider-general end *************/
+/************* prettyPhoto begin 去掉这3行，则放大之后缩略图不显示 *************/
+div.pp_pic_holder a:focus{outline:none}div.pp_overlay{background:#000;display:none;left:0;position:absolute;top:0;width:100%;z-index:9500}div.pp_pic_holder{display:none;position:absolute;width:100px;z-index:10000}.pp_top{height:13px;position:relative}* html .pp_top{padding:0 13px}.pp_top .pp_left{height:13px;left:0;position:absolute;width:13px}.pp_top .pp_middle{height:13px;left:13px;position:absolute;right:13px}* html .pp_top .pp_middle{left:0;position:static}.pp_top .pp_right{height:13px;left:auto;position:absolute;right:0;top:0;width:13px}.pp_content{height:40px;position:relative;background:#FFF}.pp_fade{display:none}.pp_content_container{position:relative;text-align:left;width:100%}.pp_content_container .pp_left{padding-left:13px}.pp_content_container .pp_right{padding-right:13px}.pp_content_container .pp_details{float:left;margin:10px 0 2px 0}.pp_description{display:none;margin:0 0 5px 0}.pp_nav{clear:left;float:left;margin:3px 0 0 0}.pp_nav p{float:left;margin:2px 10px}.pp_nav .pp_play,.pp_nav .pp_pause{float:left;margin-right:4px;text-indent:-10000px}a.pp_arrow_previous,a.pp_arrow_next{display:block;float:left;height:20px;overflow:hidden;text-indent:-10000px;width:20px}.pp_hoverContainer{position:absolute;top:0;width:100%;z-index:2000}.pp_gallery{left:50%;bottom:80px;position:absolute;z-index:10000}.pp_gallery ul{height:35px;overflow:hidden;padding:0;position:relative;margin:0 auto;margin-left:21px}.pp_gallery ul a{border:1px #000 solid;border:1px rgba(0,0,0,0.5) solid;display:block;float:left;height:33px;overflow:hidden}.pp_gallery ul a:hover,.pp_gallery li.selected a{border-color:#fff}.pp_gallery ul a img{border:0}.pp_gallery li{display:block;float:left;margin:0 5px 0 0}.pp_gallery li.default a{display:block;height:33px;width:50px}.pp_gallery li.default a img{display:none}.pp_gallery .pp_arrow_previous,.pp_gallery .pp_arrow_next{float:none;position:absolute;top:7px}.pp_gallery .pp_arrow_next{right:0}.pp_gallery .pp_arrow_previous{left:0}a.pp_next{display:block;height:92px;text-indent:-10000px;width:46px;z-index:9999;position:absolute;right:0;top:50%;margin-top:-46px}a.pp_previous{display:block;float:left;height:92px;text-indent:-10000px;width:46px;z-index:9999;position:absolute;left:0;top:50%;margin-top:-46px}a.pp_expand,a.pp_contract{cursor:pointer;display:none;height:20px;position:absolute;right:10px;text-indent:-10000px;top:10px;width:20px;z-index:20000}a.pp_contract{display:block!important}a.pp_close{display:block;float:right;line-height:22px;text-indent:-10000px;width:20px;height:20px}.pp_bottom{height:13px;position:relative}* html .pp_bottom{padding:0 13px}.pp_bottom .pp_left{height:13px;left:0;position:absolute;width:13px}.pp_bottom .pp_middle{height:13px;left:13px;position:absolute;right:13px}* html .pp_bottom .pp_middle{left:0;position:static}.pp_bottom .pp_right{height:13px;left:auto;position:absolute;right:0;top:0;width:13px}.pp_loaderIcon{display:block;height:24px;left:50%;margin:-12px 0 0 -12px;position:absolute;top:50%;width:24px}#pp_full_res{line-height:1!important;float:left}#pp_full_res .pp_inline{text-align:left}#pp_full_res .pp_inline p{margin:0 0 15px 0}div.ppt{color:#fff;display:none;font-size:17px;margin:0 0 5px 15px;z-index:9999}.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}div.duotive-modal .pp_loaderIcon{background:url(../../images/bg/001/duotive-modal-loader.gif) no-repeat}div.duotive-modal .pp_expand{background:#b2b2b2 url(../images/bg/001/duotive-modal-expand.png) no-repeat}div.duotive-modal .pp_contract{background:#b2b2b2 url(../images/bg/001/duotive-modal-contract.png) no-repeat}div.duotive-modal .pp_top .pp_left{background:url(../images/bg/001/duotive-modal-top-left.png) no-repeat}div.duotive-modal .pp_top .pp_middle{background:url(../images/bg/001/duotive-modal-top-middle.png) repeat-x}div.duotive-modal .pp_top .pp_right{background:url(../images/bg/001/duotive-modal-top-right.png) no-repeat}div.duotive-modal .pp_content_container .pp_left{background:url(../images/bg/001/duotive-modal-left.png) left repeat-y}div.duotive-modal .pp_content_container .pp_right{background:url(../images/bg/001/duotive-modal-right.png) right repeat-y}div.duotive-modal .pp_bottom .pp_left{background:url(../images/bg/001/duotive-modal-bottom-left.png) no-repeat}div.duotive-modal .pp_bottom .pp_middle{background:url(../images/bg/001/duotive-modal-bottom-middle.png) repeat-x}div.duotive-modal .pp_bottom .pp_right{background:url(../images/bg/001/duotive-modal-bottom-right.png) no-repeat}div.duotive-modal .pp_arrow_previous{background-image:url(../images/bg/001/duotive-modal-control-bottom-left.png);background-repeat:no-repeat;background-color:#b2b2b2}div.duotive-modal .pp_arrow_next{background-image:url(../images/bg/001/duotive-modal-control-bottom-right.png);background-repeat:no-repeat;background-color:#b2b2b2}div.duotive-modal a.pp_next{background:url(../images/bg/001/duotive-modal-control-right.png) top center no-repeat}div.duotive-modal a.pp_next:hover{background-position:bottom center}div.duotive-modal a.pp_previous{background:url(../images/bg/001/duotive-modal-control-left.png) top center no-repeat}div.duotive-modal a.pp_previous:hover{background-position:bottom center}div.duotive-modal a.pp_close{background-image:url(../images/bg/001/duotive-modal-close.png);background-position:top center;background-repeat:no-repeat;background-color:#b2b2b2}.pp_gallery ul a{background-image:url(../images/bg/001/duotive-modal-video.png);background-position:center;background-repeat:no-repeat}
+/************* prettyPhoto end *************/
+/************* gallery-slider begin *************/
+#slideshow-wrapper{margin:auto}#gallery-slider-wrapper{height:482px;padding:10px 0;margin:auto}#gallery-slider{margin:auto;height:482px;overflow:hidden;position:relative;z-index:9000}#gallery-slider #slider-controls{margin:auto;width:100%;height:450px;position:absolute;overflow:hidden}#gallery-slider #slider-controls a#slider-control-left,#gallery-slider #slider-controls a#slider-control-right{height:92px;width:46px;position:absolute;top:180px;z-index:9500;overflow:hidden;text-indent:-9999px;text-decoration:none}#gallery-slider #slider-controls a#slider-control-left{left:0;background-image:url(../images/bg/gallery-slider-control-left.png);background-repeat:no-repeat;background-position:0 0}#gallery-slider #slider-controls a#slider-control-left:hover{background-position:0 -92px}#gallery-slider #slider-controls a#slider-control-right{right:0;background-image:url(../images/bg/gallery-slider-control-right.png);background-repeat:no-repeat;background-position:0 0}#gallery-slider #slider-controls a#slider-control-right:hover{background-position:0 -92px}#gallery-slider #slider-bottom-controls{height:20px;width:960px;padding-top:10px;margin:0 auto}#gallery-slider #slider-bottom-controls a#slider-scroll-left,#gallery-slider #slider-bottom-controls a#slider-scroll-right{width:20px;height:20px;display:block;text-indent:-9999px;float:left;text-decoration:none}#gallery-slider #slider-bottom-controls a#slider-scroll-left{background-image:url(../../images/bg/gallery-slider-scroll-left.png);background-repeat:no-repeat}#gallery-slider #slider-bottom-controls a#slider-scroll-right{background-image:url(../../images/bg/gallery-slider-scroll-right.png);background-repeat:no-repeat}#gallery-slider #slider-bottom-controls a#slider-scroll-left:hover,#gallery-slider #slider-bottom-controls a#slider-scroll-right:hover{background-color:#24241f}#gallery-slider #slider-bottom-controls #slider-scroll{height:20px;width:920px;background:#fff;float:left}#gallery-slider #slider-bottom-controls div.knob{width:920px;height:20px;cursor:pointer;background:#24241f url(../images/bg/gallery-slider-scroll-handle.png) no-repeat center}#gallery-slider #slider-images-wrapper{margin:auto;height:452px;position:relative;overflow:hidden}#gallery-slider #slider-images-wrapper ul#slider-main-ul{width:1920px;height:450px;position:absolute;left:0;top:0;border:1px solid #FFF}#gallery-slider #slider-images-wrapper ul#slider-main-ul li{float:left;list-style:none}#gallery-slider #slider-images-wrapper ul#slider-main-ul li ul{float:left;width:320px}#gallery-slider #slider-images-wrapper ul#slider-main-ul li li{border:solid 1px #fff;background:#eae9e2 url(../images/bg/duotive-slideshow-preloader2.gif) no-repeat center}#gallery-slider ul#slider-main-ul li a{text-decoration:none;position:relative;display:none}#gallery-slider ul#slider-main-ul li a div.icon{position:absolute;width:16px;height:16px}#gallery-slider ul#slider-main-ul li a.article-icon div.icon{background:url(../images/bg/gallery-slider-icon-article.png) no-repeat center;right:9px;bottom:10px}#gallery-slider ul#slider-main-ul li a.image-icon div.icon{background:url(../images/bg/gallery-slider-icon-image.png) no-repeat center;right:10px;bottom:8px}#gallery-slider ul#slider-main-ul li a.video-icon div.icon{background:url(../images/bg/gallery-slider-icon-video.png) no-repeat center;right:10px;bottom:7px}#gallery-slider ul#slider-main-ul li a span{text-decoration:none;display:block;position:absolute;top:0;left:0;z-index:9000;background:url(../images/bg/gallery-slider-content-bg.png);padding:20px;color:#fff;font-size:8pt;opacity:0;filter:alpha(opacity=0)}#gallery-slider ul#slider-main-ul li a span strong{display:block;font-size:10pt;padding-bottom:11px}#gallery-slider ul#slider-main-ul li a span em{display:block;font-size:8pt;padding-top:11px;font-style:normal}#gallery-slider ul#slider-main-ul li a img{position:absolute;top:0;left:0}#gallery-slider ul#slider-main-ul li li.type-1,#gallery-slider ul#slider-main-ul li li.type-1 a{width:158px;height:148px}#gallery-slider ul#slider-main-ul li li.type-1 a span{width:118px;height:108px}#gallery-slider ul#slider-main-ul li li.type-2,#gallery-slider ul#slider-main-ul li li.type-2 a{width:318px;height:148px}#gallery-slider ul#slider-main-ul li li.type-2 a span{width:278px;height:108px}#gallery-slider ul#slider-main-ul li li.type-3,#gallery-slider ul#slider-main-ul li li.type-3 a{width:318px;height:298px}#gallery-slider ul#slider-main-ul li li.type-3 a span{width:278px;height:258px}
+/************* gallery-slider end *************/
+/************* skin begin 去掉这段，则放大之后缩略图不显示 *************/
+#toptoolbar-wrapper {background:#312528;}
+.menu-header ul li a:hover,
+.menu-header ul li a:active,
+.menu-header ul li.current-menu-item a:link,
+.menu-header ul li.current-menu-item a:visited,
+#complex-slider-wrapper #slider-description strong,
+#presentation-slider #slider-gallery li span.number,
+#presentation-slider #slider-gallery li.active span.title,
+#content-slider-wrapper .side-description .content a.read-more:hover,
+#content-slider-wrapper .side-description .content a.read-more:active,
+#anything-slider-wrapper .content a.read-more:hover,
+#anything-slider-wrapper .content a.read-more:active,
+#nivo-slider .nivo-controlNav a.nivo-control,
+#intro h1,
+#front-page-business .front-page-post h3 a:link,
+#front-page-business .front-page-post h3 a:visited,
+#front-page-posts .post h3 a:link,
+#front-page-posts .post h3 a:visited,
+#front-page-posts .post a.more-link:link,
+#front-page-posts .post a.more-link:visited,
+#front-page-business #front-page-bottom ul li h3 a:link,
+#front-page-business #front-page-bottom ul li h3 a:visited,
+#front-page-business #bottom-content-scroll ul li a.more-link:link,
+#front-page-business #bottom-content-scroll ul li a.more-link:visited,
+#front-page-botton-widgets div.column a:link,
+#front-page-botton-widgets div.column a:visited,
+#front-page-botton-widgets div.column strong,
+#front-page-news #left-content .post h3 a:link,
+#front-page-news #left-content .post h3 a:visited,
+#front-page-news #left-content .post a.more-link:link,
+#front-page-news #left-content .post a.more-link:visited,
+#front-page-news #content .post a.title:link,
+#front-page-news #content .post a.title:visited,
+#front-page-news #left-content .post .more-link:link,
+#front-page-news #left-content .post .more-link:visited,
+#front-page-news #content .just-title-element a:link,
+#front-page-news #content .just-title-element a:visited,
+#front-page-news #content-sidebar ul li a:link,
+#front-page-news #content-sidebar ul li a:visited,
+#front-page-news #content-sidebar strong,
+#front-page-presentation ul li a:link,
+#front-page-presentation ul li a:visited,
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6,
+#content table thead tr th,
+#content a:link,
+#content a:visited,
+#content .blog-classic h2 a:link,
+#content .blog-classic h2 a:visited,
+#content .blog-modern h2 a:link,
+#content .blog-modern h2 a:visited,
+#content span.post-date strong,
+#content span.post-date strong em,
+#content #blog-accordion h3 a:hover,
+#content #blog-accordion h3 a:active,
+#content .blog-full h2 a:link,
+#content .blog-full h2 a:visited,
+#content .tabs ul.ui-tabs-nav li.ui-state-active a:link,
+#content .tabs ul.ui-tabs-nav li.ui-state-active a:visited,
+#content .tabs ul.ui-tabs-nav li a:hover,
+#content .tabs ul.ui-tabs-nav li a:active,
+#content .accordion .ui-accordion-header a:hover,
+#content .accordion .ui-accordion-header a:active,
+#content .accordion .ui-state-active a:link,
+#content .accordion .ui-state-active a:visited,
+#comments div.comment-header div.author,
+#sidebar ul li.widget-container ul li a:hover,
+#sidebar ul li.widget-container ul li a:active,
+#sidebar ul li.widget_tag_cloud a:hover,
+#sidebar ul li.widget_tag_cloud a:active,
+.dt-twitter a:link,
+.dt-twitter a:visited,
+#sidebar #calendar_wrap caption,
+#sidebar #wp-calendar a:link,
+#sidebar #wp-calendar a:visited,
+#sidebar #wp-calendar tr th,
+#sidebar .contact li a:link,
+#sidebar .contact li a:visited,
+#footer-tabs .tab h3,
+#footer-tabs .tab li.widget-container a:link,
+#footer-tabs .tab li.widget-container a:visited,
+#footer-tabs .tab li.widget-container ul li a:hover,
+#footer-tabs .tab li.widget-container ul li a:active,
+#copyright a:link,
+#copyright a:visited
+{
+	color: #;
+}
+abbr{
+	color: # !important;
+}
+div.duotive-modal .pp_arrow_previous:hover,
+div.duotive-modal .pp_arrow_next:hover,
+div.duotive-modal a.pp_close:hover,
+div.duotive-modal a.pp_expand:hover,
+div.duotive-modal a.pp_contract:hover,
+#toptoolbarsearch input.searchbutton:hover,
+.menu-header ul.sub-menu,
+.menu-header .sfHover .sf-sub-indicator,
+#content-slider-wrapper .side-description .content a.read-more:link,
+#content-slider-wrapper .side-description .content a.read-more:visited,
+#anything-slider-wrapper .content a.read-more:link,
+#anything-slider-wrapper .content a.read-more:visited,
+#complex-slider-wrapper #slider-timer #slider-progress-bar,
+#presentation-slider #slider-timer #slider-progress-bar,
+#presentation-slider #slider-bottom-controls a#slider-scroll-left,
+#presentation-slider #slider-bottom-controls a#slider-scroll-right,
+#gallery-slider #slider-bottom-controls a#slider-scroll-left,
+#gallery-slider #slider-bottom-controls a#slider-scroll-right,
+#fullwidth-slider #slider-text #content-controls a#slider-control-up:hover,
+#fullwidth-slider #slider-text #content-controls a#slider-control-down:hover,
+#fullwidth-slider #slider-text #content-controls a#slider-control-play,
+#fullwidth-slider #contentbox,
+#front-page-business .front-page-post .more-link:hover,
+#front-page-business .front-page-post .more-link:active,
+#front-page-business #bottom-content-scroll .bx-pager a:hover,
+#front-page-business #bottom-content-scroll .bx-pager a:active,
+#front-page-business #bottom-content-scroll .bx-pager a.pager-active,
+#front-page-botton-widgets div.column li.widget-container a.read-more:hover,
+#front-page-botton-widgets div.column li.widget-container a.read-more:active,
+#front-page-news #content-sidebar a.read-more:hover,
+#front-page-news #content-sidebar a.read-more:active,
+#content a.more-link:hover,
+#content a.more-link:active,
+#content form.jqtransformdone div.jqTransformSelectWrapper ul li a.selected,
+#content form.jqtransformdone div.jqTransformSelectWrapper ul li a:hover,
+#content form.jqtransformdone div.jqTransformSelectWrapper ul li a:active,
+#content form.jqtransformdone .jqTransformRadioWrapper a.jqTransformChecked,
+#content form.jqtransformdone .jqTransformCheckboxWrapper a.jqTransformChecked,
+#content form div.jqTransformSelectWrapper div:hover a:link,
+#content form div.jqTransformSelectWrapper div:hover a:visited,
+#content input[type="button"]:hover,
+#content input[type="submit"]:hover,
+#content input[type="reset"]:hover, 
+#content .accordion .ui-state-hover span.ui-icon,
+#content .accordion .ui-state-active span.ui-icon,
+#content table.pricing tr.buttons td a.button:hover,
+#content table.pricing tr.buttons td a.button:active,
+#content .portfolio-sub-pages li.current_page_item a:link,
+#content .portfolio-sub-pages li.current_page_item a:visited,
+#content .portfolio-sub-pages li a:hover,
+#content .portfolio-sub-pages li a:active,
+#content div.portfolio-two-column-slideshow .nivo-prevNav:hover,
+#content div.portfolio-two-column-slideshow .nivo-nextNav:hover,
+#comments div.comment-header div.reply a:hover,
+#comments div.comment-header div.reply a:active,
+#content .button:hover,
+#content .button:active,
+#respond h3 small a:hover,
+#respond h3 small a:active,
+#sidebar input[type="submit"]:hover,
+#sidebar .sidebar-slideshow .nivo-prevNav:hover,
+#sidebar .sidebar-slideshow .nivo-nextNav:hover,
+#sidebar .contact .contact-icon,
+#contact-page #contact-sidebar ul li span.contact-icon,
+#footer-partners .bx-prev:hover,
+#footer-partners .bx-prev:active,
+#footer-partners .bx-next:hover,
+#footer-partners .bx-next:active,
+#footer-tabs .tab li.widget-container a.read-more:hover,
+#footer-tabs .tab li.widget-container a.read-more:active,
+#footer-tabs .tab li.widget-container input[type="submit"]:hover
+{
+	background-color: #;
+}
+#content input[type="text"]:focus,
+#content input[type="password"]:focus,
+#content textarea:focus,
+#content form div.jqTransformSelectWrapper div:hover,
+#sidebar li.minigallery div.mini-gallery a:hover,
+#sidebar li.minigallery div.mini-gallery a:active,
+#sidebar input[type="text"]:focus,
+#sidebar textarea:focus,
+#footer-tabs .tab li.widget-container input[type="text"]:focus,
+#footer-tabs .tab li.widget-container textarea:focus,
+#complex-slider #slider-contentbox #slider-gallery a.active span,
+#fullwidth-slider #slider-gallery a.active span {
+	border-color: #;
+}
+#toptoolbar .menu-toptoolbar ul li.current-menu-item a:link,
+#toptoolbar .menu-toptoolbar ul li.current-menu-item a:visited,
+#content-slider-wrapper .side-description .content h3,
+#content-slider-wrapper .side-description .content strong,
+#anything-slider-wrapper .content h3,
+#anything-slider-wrapper .content strong,
+#presentation-slider #slider-images-wrapper a span.title,
+#gallery-slider ul#slider-main-ul li a span em,
+#gallery-slider ul#slider-main-ul li a span strong,
+#accordion-slider ul li div.content h3,
+#accordion-slider ul li div.content a:link,
+#accordion-slider ul li div.content a:visited,
+#nivo-slider .nivo-caption span.title,
+#nivo-slider .nivo-caption .read-more,
+#sub-footer .menu-footer ul li a:hover,
+#sub-footer .menu-footer ul li a:active {
+	color:#9ab04d; /** 去年颜色值9ab04d 则标题不显示  */
+}
+/************* skin end *************/
+/************* background-images begin 去掉这段，则背景图不显示 *************/
+#slideshow-wrapper {
+	    	background-color: #dedede;
+           		background-image: url(../images/bg/slideshow-background.jpg);
+        background-repeat:  no-repeat;
+    background-position: center center;
+}
+#slideshow-pattern{
+	opacity:0.3;
+    filter: alpha(opacity=30);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+#sub-header-content-wrapper {
+    background-image: url(../images/bg/slideshow-background.jpg);
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+#sub-header-content-pattern {
+	opacity:0.5;
+    filter: alpha(opacity=50);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+#sub-header-color-overlay {
+	background:;
+}
+/************* background-images end *************/

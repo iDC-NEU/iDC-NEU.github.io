@@ -139,7 +139,7 @@ img{border-style:none; vertical-align: top;}
 }
 #nav ul li {
 	float: left;
-	padding: 0 0 0 60px;
+	padding: 0 0 0 40px;
 }
 #nav ul li:first-child{padding: 0;}
 #nav ul a {
