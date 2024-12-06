@@ -1,1 +1,1 @@
-document.writeln("   <title>iDC Group</title>")
+document.writeln("   <title>iDC-NEU Group</title>")
