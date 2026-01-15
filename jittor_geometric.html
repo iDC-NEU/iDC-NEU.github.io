@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"> <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="title.js"></script>
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="shortcut icon" href="images/short-icon.png"  type="image/x-icon" />
+    <link rel="icon" href="images/short-icon.png" type="image/x-icon" />
+    <style>
+        /* 保持之前的修改：强制黑色字体 */
+        body, p, h2, h3, ul, li, a {
+            color: #000000;
+        }
+        
+        /* 图片说明文字的样式 */
+        figcaption {
+            margin-top: 10px;
+            color: #666; 
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        pre {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 15px 0;
+            color: #000000; 
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: #c7254e;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+            color: inherit;
+        }
+        h4 {
+            margin-top: 20px;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4BHRKYZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G4BHRKYZ7P');
+</script>
+    
+<body>
+    <div id="wrapper">
+        <div class="wrapper-header" style="float">
+            <header id="header">
+                <script type="text/javascript" src="header.js"></script>
+            </header>
+        </div>
+        <div class="project-body">
+        <h2>Jittor Geometric 项目</h2>
+        <div style="margin-bottom: 20px;">
+            <a href="https://github.com/AlgRUC/JittorGeometric/watchers" target="_blank" style="text-decoration: none; margin-right: 5px;">
+                <img src="https://img.shields.io/github/watchers/AlgRUC/JittorGeometric?style=social" alt="Watchers">
+            </a>
+            <a href="https://github.com/AlgRUC/JittorGeometric/network/members" target="_blank" style="text-decoration: none; margin-right: 5px;">
+                <img src="https://img.shields.io/github/forks/AlgRUC/JittorGeometric?style=social" alt="Forks">
+            </a>
+            <a href="https://github.com/AlgRUC/JittorGeometric/stargazers" target="_blank" style="text-decoration: none; margin-right: 5px;">
+                <img src="https://img.shields.io/github/stars/AlgRUC/JittorGeometric?style=social" alt="Stars">
+            </a>
+        </div>
+        
+        <p>Jittor Geometric 是一个基于Jittor深度学习框架构建的图机器学习库，专门用于处理图结构数据和几何深度学习任务。</p>
+		<a href="https://github.com/AlgRUC/JittorGeometric">项目地址</a>
+        
+        <h3>项目概述</h3>
+        <p>Jittor Geometric 是一个先进的图机器学习库，建立在Jittor深度学习框架之上。它提供了丰富的图神经网络模型和几何深度学习算法，支持高效的图数据处理和模型训练。</p>
+
+        <figure style="margin: 30px 0; text-align: center;">
+            <img src="images/projects/jittor_logo.png" alt="logo" style="max-width: 100%; height: auto; border-radius: 4px; border: 1px solid #eee; padding: 5px;">
+        </figure>
+
+        <figure style="margin: 30px 0; text-align: center;">
+            <img src="images/projects/jittor_overview.png" alt="架构" style="max-width: 100%; height: auto; border-radius: 4px; border: 1px solid #eee; padding: 5px;">
+            <figcaption>Jittor Geometric整体架构</figcaption>
+        </figure>
+        <h3>主要特性</h3>
+        <ul>
+            <li>高性能图神经网络实现</li>
+            <li>与Jittor深度学习框架无缝集成</li>
+            <li>支持多种图数据结构</li>
+            <li>丰富的几何深度学习算法</li>
+        </ul>
+        
+        <h3>快速入门</h3>
+        <p>以下是一个使用Jittor Geometric训练GCN模型的简单示例：</p>
+        
+        <pre><code># Dataset Selection
+import os.path as osp
+from jittor_geometric.datasets import Planetoid
+import jittor_geometric.transforms as T
+
+dataset = 'Cora'
+path = osp.join(osp.dirname(osp.realpath(__file__)), '..', 'data', dataset)
+dataset = Planetoid(path, dataset, transform=T.NormalizeFeatures())
+data = dataset[0]</code></pre>
+        
+        <pre><code># Data Preprocess
+from jittor_geometric.ops import cootocsr,cootocsc
+from jittor_geometric.nn.conv.gcn_conv import gcn_norm
+edge_index, edge_weight = data.edge_index, data.edge_attr
+edge_index, edge_weight = gcn_norm(
+                        edge_index, edge_weight,v_num,
+                        improved=False, add_self_loops=True)
+with jt.no_grad():
+   data.csc = cootocsc(edge_index, edge_weight, v_num)
+   data.csr = cootocsr(edge_index, edge_weight, v_num)</code></pre>
+        
+        <pre><code># Model Definition
+from jittor import nn
+from jittor_geometric.nn import GCNConv
+
+class GCN(nn.Module):
+    def __init__(self, dataset, dropout=0.8):
+        super(Net, self).__init__()
+        self.conv1 = GCNConv(in_channels=dataset.num_features, out_channels=256,spmm=args.spmm)
+        self.conv2 = GCNConv(in_channels=256, out_channels=dataset.num_classes,spmm=args.spmm)
+        self.dropout = dropout
+
+    def execute(self):
+        x, csc, csr = data.x, data.csc, data.csr
+        x = nn.relu(self.conv1(x, csc, csr))
+        x = nn.dropout(x, self.dropout, is_train=self.training)
+        x = self.conv2(x, csc, csr)
+        return nn.log_softmax(x, dim=1)</code></pre>
+        
+        <pre><code># Training
+model = GCN(dataset)
+optimizer = nn.Adam(params=model.parameters(), lr=0.001, weight_decay=5e-4) 
+for epoch in range(200):
+   model.train()
+   pred = model()[data.train_mask]
+   label = data.y[data.train_mask]
+   loss = nn.nll_loss(pred, label)
+   optimizer.step(loss)</code></pre>
+        
+        
+        <h3>相关链接</h3>
+        <ul>
+			<li><a href="https://github.com/AlgRUC/JittorGeometric">Jittor Geometric GitHub</a></li>
+            <li><a href="https://github.com/Jittor/Jittor">Jittor GitHub</a></li>
+            <li><a href="https://cg.cs.tsinghua.edu.cn/jittor/">Jittor官方网站</a></li>
+        </ul>
+        </div>
+
+        <footer id="footer">
+            <script type="text/javascript" src="footer.js"></script>
+        </footer>
+    </div>
+
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/cells-by-row.js"></script>
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
