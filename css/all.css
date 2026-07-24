@@ -363,4 +363,76 @@ h2.research{
 	text-decoration:none;
 }
 
+.social-accounts a:hover {
+	text-decoration: underline;
+}
 
+.social-links {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: nowrap;
+	gap: 8px 16px;
+}
+
+.social-links a {
+	display: inline-block;
+	font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 1.5;
+	white-space: nowrap;
+}
+
+body.qrcode-modal-open {
+	overflow: hidden;
+}
+
+.social-qrcode-modal {
+	display: none;
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.social-qrcode-modal.is-open {
+	display: flex;
+}
+
+.social-qrcode-dialog {
+	position: relative;
+	padding: 16px;
+	border-radius: 4px;
+	background: #FFFFFF;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.social-qrcode-dialog img {
+	display: block;
+	width: 258px;
+	height: 258px;
+	max-width: calc(100vw - 80px);
+	max-height: calc(100vh - 80px);
+	object-fit: contain;
+}
+
+.social-qrcode-close {
+	position: absolute;
+	top: -14px;
+	right: -14px;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	border: 2px solid #FFFFFF;
+	border-radius: 50%;
+	background: #222222;
+	color: #FFFFFF;
+	font: bold 26px/30px Arial, sans-serif;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
